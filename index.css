@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #79bbfe;
+    background-image: url(img/CirclingPlane.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage {
+    text-align: center;
+   
+}
+
+.logo {
+    width: 700px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: #000000;
+    margin: 20px 0 0;
+}

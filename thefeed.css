@@ -1,0 +1,179 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Azeret Mono";
+    src: url(Fonts/Azeret_Mono/static/AzeretMono-Medium.ttf);
+}
+
+#Azeret_Mono {
+    font-family: "Azeret Mono";
+}
+
+
+/* FULL PAGE */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/Background.jpg");
+    color: #222;
+    font-family: "Azeret Mono", Helvetica, monospace;
+}
+
+
+/* BIO + INTRO */
+
+.top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    position: relative;
+}
+
+
+/* BIO - LEFT */
+
+.bio {
+    text-align: left;
+}
+
+.bio h1 {
+    margin: 0 0 30px;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.bio .img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 0 25px;
+    transition: transform 0.3s ease;
+}
+.bio .img.zoomed {
+    transform: scale(1.5);
+    position: relative;
+    z-index: 10;
+}
+
+/* INTRO - RIGHT */
+
+.intro {
+    text-align: left;
+}
+
+.intro h1 {
+    margin: 0 0 20px;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.intro p {
+    max-width: 450px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* TECH FEED - RIGHT SIDE */
+
+.tech-feed {
+    width: 65%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: -600px;
+}
+
+
+/* FIRST TECH CARD */
+
+.tech:first-child {
+    margin-top: 20px;
+}
+
+
+/* TECH CARDS */
+
+.tech {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 50px;
+    background-color: white;
+    margin: 40px 0;
+
+    border: 3px dashed #ac7cf4;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 0px #ddd;
+    transition: 0.3s ease;
+}
+.tech:hover {
+    transform: translateY(-8px);
+    box-shadow: 8px 8px 0px #ac7cf4;
+    transition: 0.3s ease;
+}
+
+
+/* CIRCLES ON TECH CARDS */
+
+.tech::before,
+.tech::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tech::before {
+    left: -17px;
+}
+
+.tech::after {
+    right: -17px;
+}
+
+
+/* TECH IMAGES */
+
+.tech .img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 0 30px;
+}
+
+
+/* TECH HEADINGS */
+
+.tech h3 {
+    margin: 0 0 20px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+
+/* TECH PARAGRAPHS */
+
+.tech p {
+    max-width: 700px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.7;
+}
